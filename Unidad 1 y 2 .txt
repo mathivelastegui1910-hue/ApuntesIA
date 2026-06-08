@@ -1,0 +1,146 @@
+🤖 INTELIGENCIA ARTIFICIAL & SEGURIDAD DIGITAL
+Unidad 1
+🧠 ¿Cómo usar bien la IA?
+
+Para que la IA funcione bien, hay que darle instrucciones claras llamadas prompt, que deben incluir:
+
+	•	🎭 Rol: quién soy (ej: estudiante de 17 años)
+	•	🎯 Tarea específica: qué quiero que haga (crear, explicar, resumir)
+	•	📄 Formato: tipo de archivo o estilo (cuadro, lista, ensayo)
+	•	🧩 Ejemplo: cómo quiero que quede
+	•	✍️ Forma de escribir: lenguaje sencillo, sin palabras rebuscadas
+
+⸻
+
+🔐 Modelo CID / CIA (Triada de la Seguridad)
+
+Son 3 principios básicos que protegen la información:
+
+1️⃣ Confidencialidad 🔒
+
+Solo personas autorizadas pueden ver la información.
+Ejemplos: contraseñas, permisos, cifrado.
+
+2️⃣ Integridad ✅
+
+Los datos no deben ser cambiados sin permiso.
+Ejemplos: firmas digitales, respaldos, controles de edición.
+
+3️⃣ Disponibilidad 🌐
+
+La información debe estar accesible cuando se necesite.
+Ejemplos: servidores activos, copias de seguridad.
+
+📝 En resumen:
+El modelo CID/CIA protege que la información sea privada, correcta y disponible cuando se requiera.
+
+⸻
+
+🛡️ Sistemas de seguridad y privacidad
+
+Son herramientas que cuidan nuestros datos:
+
+	•	🦠 Antivirus
+	•	🔥 Firewall
+	•	🔑 Autenticación en dos pasos
+	•	📜 Políticas de privacidad
+	•	👤 Control de accesos
+
+⸻
+
+⚠️ Vulnerabilidades
+
+	•	🧨 Ransomware: ataca redes y secuestra información
+	•	🐞 Malware: daña el equipo
+	•	🎣 Phishing: engaña al usuario para robar datos
+
+⸻
+
+🧩 Estructura de un Prompt
+
+👉 Rol + Contexto + Tarea clara
+Mientras más específico seas, mejores resultados obtienes.
+
+⸻
+
+🍏 Reto Apple
+
+🎯 Objetivo: Analizar aplicaciones nativas de Apple
+💻 Lenguaje: Swift
+📱 Meta: Identificar y aplicar apps como Safari, Notas, Fotos, etc., usando su propio ecosistema.
+
+⸻
+
+⚙️ Componentes de Hardware en IA
+
+📌 El hardware es todo lo físico que se puede tocar:
+
+	•	🧠 CPU: procesador principal, versátil pero más lento para IA
+	•	🎮 GPU: trabaja en paralelo, ideal para IA
+	•	🤖 TPU: creada para IA, súper rápida en Deep Learning
+
+⸻
+
+💻 Lenguajes de Programación en IA
+
+Alto nivel:
+
+	•	🐍 Python – fácil y muy usado
+	•	📊 R – análisis estadístico
+
+Bajo nivel:
+
+	•	⚡ C++ – rápido, alto rendimiento
+	•	☕ Java – usado en grandes sistemas
+
+⸻
+
+🔏 CERTIFICADOS DIGITALES
+
+Sirven para dar seguridad y confirmar identidad en internet.
+
+	•	👨‍⚖️ Notario digital → Autoridad Certificadora (AC)
+    Garantiza que una persona o sistema es real. Emite y firma el certificado.
+	•	💻 Validación → Software (SW) → Criptografía / Hash
+    El software revisa que el certificado sea auténtico y no esté alterado.
+	•	👥 Cuentas
+    Permiten acceso seguro, firmas electrónicas y protección de datos.
+
+📌 En resumen:
+Los certificados digitales dan confianza en internet, protegen la información y aseguran que la persona con la que interactúas es quien dice ser ✅🔐
+
+Unidad 2 
+1. Evolución de la Web
+	•	Web 1.0 (La Web Informativa) 📰: Básicamente es como un periódico digital. Solo sirve para informar; el usuario es pasivo y no hay forma de interactuar.
+	•	Web 2.0 (La Web Social) 👥: Basada en redes sociales. Funciona mediante algoritmos de personalización: si buscas algo que te gusta (por ejemplo, One Piece), el sistema te empezará a mostrar contenido relacionado con eso.
+	•	Web 3.0 (La Web Semántica y Descentralizada) 🪙: Se caracteriza por ser  descentralizada, lo que significa que los usuarios tienen mayor control y hay menos intermediarios.
+	•	Web 4.0 (La Web Inteligente) 🤖: Está más centrada en la Inteligencia Artificial (IA) como puente de interacción entre el humano y la máquina. Incluye entornos como el Metaverso.
+2. Inteligencia Artificial y Modelos de Lenguaje
+	•	LLM / LLA 🧠: Significa Modelo de Lenguaje Largo (Large Language Model).
+	•	Objetivo de la clase: Usar el código de la IA para promover u obtener nuevo conocimiento.
+	•	Actividad: ELI #_ tema / pregunta (Explicación asistida por IA).
+🛠️ Características Clave de la Web 3.0 y Tecnologías Asociadas:
+	1.	Descentralizado 🌐
+	2.	Seguro y confiable 🔒
+	3.	Web Semántica 🧠 (Comprensión inteligente del contenido).
+	4.	IoT (Internet de las Cosas) 🔌 (Objetos conectados a la red).
+3. Blockchain (Cadena de Bloques) y Nodos
+	•	Objetivo: Comprender la metodología que utiliza la Web 3.0.
+	•	Definición de Blockchain: Red basada en nodos y consenso.
+¿Qué son los Nodos? 💻
+	•	¿Quiénes son?: Los nodos están constituidos por todos aquellos ordenadores/computadoras que están interconectados a la red de una criptomoneda, ejecutando el software que se encarga de todas las funciones.
+	•	Ventaja de la Descentralización: Si tan solo uno de los nodos se desconecta, no le afecta al resto de la red (el sistema sigue funcionando perfectamente).
+	•	Funciones de los Nodos: Pueden realizar distintas tareas dentro de la red, tales como:
+	•	📡 Retransmisión de datos.
+	•	💾 Almacenamiento de datos.
+	•	📨 Servicio de envío.
+4. Proyectos Escolares / Actividades
+💳 Proyecto de Billetera Digital (Digital Wallet)
+	•	Objetivo: Utilizar la tecnología para la gestión académica interdisciplinaria.
+	•	Actividad General: Realizar un ensayo sobre el proyecto de unidad apoyado con la Inteligencia Artificial (IA).
+	•	Estructura requerida para el ensayo:
+	•	📅 Fecha
+	•	✍️ Autor
+	•	📝 Tema
+	•	📚 Marco teórico
+	•	🖼️ Imagen
