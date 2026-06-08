@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApuntesIA - Repositorio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            background: #f6f8fb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-card h3 {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-card p {
+            color: #667eea;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .languages-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+
+        .languages-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .language-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .language-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .language-bar {
+            flex: 1;
+            background: #eee;
+            height: 24px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+
+        .language-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 8px;
+            color: white;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 15px;
+            background: #f6f8fb;
+            border-radius: 8px;
+        }
+
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f6f8fb;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .footer {
+            background: #f6f8fb;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 ApuntesIA</h1>
+            <p>Apuntes de Inteligencia Artificial</p>
+        </div>
+
+        <div class="content">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Propietario</h3>
+                    <p id="owner">Cargando...</p>
+                </div>
+                <div class="info-card">
+                    <h3>Rama Principal</h3>
+                    <p id="branch">Cargando...</p>
+                </div>
+                <div class="info-card">
+                    <h3>Visibilidad</h3>
+                    <p id="visibility">Cargando...</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value" id="stars">⭐ 0</div>
+                    <div class="stat-label">Stars</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="forks">🔀 0</div>
+                    <div class="stat-label">Forks</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="watchers">👀 0</div>
+                    <div class="stat-label">Watchers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="issues">📋 0</div>
+                    <div class="stat-label">Issues</div>
+                </div>
+            </div>
+
+            <div class="languages-section">
+                <h2>Lenguajes</h2>
+                <div id="languages-container">
+                    <p style="color: #999; margin-bottom: 20px;">El repositorio no tiene archivos aún</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="https://github.com/mathivelastegui1910-hue/ApuntesIA" class="btn btn-primary">
+                    🔗 Ver en GitHub
+                </a>
+                <a href="https://github.com/mathivelastegui1910-hue/ApuntesIA/issues" class="btn btn-secondary">
+                    📝 Issues
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🤖 Página generada dinámicamente desde GitHub API | Última actualización: <span id="update-time"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Actualizar hora
+        document.getElementById('update-time').textContent = new Date().toLocaleString('es-ES');
+
+        // Función para obtener datos del repositorio
+        async function loadRepoData() {
+            try {
+                const response = await fetch('https://api.github.com/repos/mathivelastegui1910-hue/ApuntesIA');
+                const repo = await response.json();
+                
+                // Actualizar información básica
+                document.getElementById('owner').textContent = repo.owner.login;
+                document.getElementById('branch').textContent = repo.default_branch;
+                document.getElementById('visibility').textContent = repo.private ? 'Privado' : 'Público';
+                
+                // Actualizar estadísticas
+                document.getElementById('stars').textContent = '⭐ ' + repo.stargazers_count;
+                document.getElementById('forks').textContent = '🔀 ' + repo.forks_count;
+                document.getElementById('watchers').textContent = '👀 ' + repo.watchers_count;
+                document.getElementById('issues').textContent = '📋 ' + repo.open_issues_count;
+                
+                // Obtener lenguajes
+                const langResponse = await fetch('https://api.github.com/repos/mathivelastegui1910-hue/ApuntesIA/languages');
+                const languages = await langResponse.json();
+                
+                if (Object.keys(languages).length > 0) {
+                    displayLanguages(languages);
+                }
+                
+                console.log('Datos del repositorio cargados correctamente');
+            } catch (error) {
+                console.error('Error al obtener datos:', error);
+            }
+        }
+
+        // Función para mostrar lenguajes
+        function displayLanguages(languages) {
+            const total = Object.values(languages).reduce((a, b) => a + b, 0);
+            const container = document.getElementById('languages-container');
+            container.innerHTML = '';
+            
+            Object.entries(languages).forEach(([lang, bytes]) => {
+                const percentage = ((bytes / total) * 100).toFixed(1);
+                const langDiv = document.createElement('div');
+                langDiv.className = 'language-item';
+                langDiv.innerHTML = `
+                    <span style="min-width: 100px; font-weight: bold;">${lang}</span>
+                    <div class="language-bar">
+                        <div class="language-fill" style="width: ${percentage}%">
+                            ${percentage}%
+                        </div>
+                    </div>
+                `;
+                container.appendChild(langDiv);
+            });
+        }
+
+        // Cargar datos cuando se abre la página
+        loadRepoData();
+        
+        // Recargar datos cada 5 minutos
+        setInterval(loadRepoData, 300000);
+    </script>
+</body>
+</html>
